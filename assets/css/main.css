@@ -107,3 +107,16 @@
   width: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 992px) {
+  .nav-link:hover {
+    color: rgb(56 55 55) !important;
+  }
+
+  .navbar-brand.logo {
+    font-size: 1.8rem;
+  }
+  .navbar-brand.logo img {
+    width: 50px !important;
+  }
+}

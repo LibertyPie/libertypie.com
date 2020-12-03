@@ -132,7 +132,9 @@ async function processMediumRssFeed(data){
                             '<br>'+
                             formattedDate[2]+
                         '</div>'+
-                        '<img class="card-img-top shadow" src="'+thumbnail+'"  height="240" alt="">'+
+                         '<div class="fit-img">'+
+                            '<img class="card-img-top shadow" src="'+thumbnail+'"  alt="">'+
+                         '</div>'+
                         '<div class="card-body pt-2 bg-white">'+
                             '<a class="d-inline-block text-muted mb-2">&nbsp;</a>'+
                             '<h2 class="h5 font-weight-medium text-truncate">'+

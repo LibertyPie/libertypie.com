@@ -241,14 +241,12 @@
     $(function(){
 
       $('#iframe').on("load", function() { 
-
         var frameObj = $(this)
         setFrameHeight(frameObj); 
-
-        $(window).on("resize orientationchange",function(){ setFrameHeight(frameObj); })
-        
+        $(window).resize(function(){ setFrameHeight(frameObj); })
       }); 
 
+     
     })
   </script>
   

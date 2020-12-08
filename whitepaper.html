@@ -142,8 +142,7 @@
                 
                 <li class="mb-3 nav-item"><a class="nav-link"  target="_blank" href="mailto:hello@libertypie.com">Contact Us</a></li>
 
-                <li class="mb-3 nav-item"><a class="nav-link scrollable" href="/whitepaper.html">White Paper</a></li>
-
+                <li class="mb-3 nav-item"><a class="nav-link" href="/whitepaper.html"   target="_blank">White Paper</a></li>
               </ul>
        
             </div>
@@ -222,13 +221,19 @@
 
   <script>
     $(function(){
-      $('#iframe').on("load", function() {
-          var frameContent = $(this).contents();
+
+      function setFrameHeight(){
+        var frameContent = $(this).contents();
           var frameBody = frameContent.find("body")
           frameBody.css({"margin": "0px", "width": "100%","max-width": "100%","padding": "0px"})
           $(this).height((frameBody.get(0).scrollHeight) + 'px');
           
-      }); 
+      }
+
+      $('#iframe').on("load", function() { setFrameHeight(); }); 
+
+      $(window).on("resize orientationchange",function(){ setFrameHeight(); })
+
     })
   </script>
   

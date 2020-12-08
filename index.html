@@ -31,17 +31,19 @@
 
         gtag('config', 'G-0D0LYN4ZRM');
       </script>
-      
+
     </head>
     <body>   
         <div class="page-wrapper">            
-            <div id="ht-preloader">
+          <!-- 
+          <div id="ht-preloader">
                 <div class="loader clear-loader">
                     <span></span>
                     <p>LibertyPie</p>
                 </div>
             </div>
-
+          --->
+    
           <!-- preloader end -->
 
     <!--header start-->
@@ -625,6 +627,21 @@
   <!-- inject js start -->
   
   <script src="/assets/js/app.min.js"></script>
+
+  <script>
+    $(function(){
+      
+      fetchLatestBlogFeed();
+
+      $("a.scrollable").on("click",function(e){
+          e.preventDefault();
+          var aid = $(this).data("contentId") || ($(this).attr("href") || "");
+          if((aid.length || 0) == 0) return false;
+          $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+      })
+
+    });
+  </script>
 
   <!-- inject js end -->
   

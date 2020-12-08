@@ -7,20 +7,6 @@
 // @koala-prepend "theme-script.js"
 // @koala-prepend "jquery.countTo.js"
   
-$(function(){
-
-    fetchLatestBlogFeed();
-
-    $("a.scrollable").on("click",function(e){
-        e.preventDefault();
-        var aid = $(this).data("contentId") || ($(this).attr("href") || "");
-        if((aid.length || 0) == 0) return false;
-        $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
-    })
-
- 
-});
-
 
 async function fetchLatestBlogFeed() {
 

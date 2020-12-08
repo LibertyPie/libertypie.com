@@ -334,7 +334,7 @@ function contactform() {
 
 /*------------------------------------
   HT Parallax
---------------------------------------*/
+--------------------------------------
 function parallax() {
   $(".parallaxie").parallaxie({
       speed: 0.4,
@@ -344,7 +344,7 @@ var image = document.getElementsByClassName('thumbnail');
 new simpleParallax(image, { 
     orientation: 'right' 
 });
-};
+};*/
 
 
 /*------------------------------------
@@ -562,7 +562,7 @@ $(document).ready(function() {
     databgcolor(),  
     //contactform(),
     progressbar(),
-    parallax(),
+    //parallax(),
     countdown(),
     //rangeslider(),
     btnproduct()

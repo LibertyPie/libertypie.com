@@ -220,20 +220,19 @@
   <!-- inject js end -->
 
   <script>
+
+    function setFrameHeight(frameObj){
+      var frameContent = frameObj.contents();
+        var frameBody = frameContent.find("body")
+        frameBody.css({"margin": "0px", "width": "100%","max-width": "100%","padding": "0px"})
+        frameObj.height((frameBody.get(0).scrollHeight) + 'px');
+    }
+
     $(function(){
 
-      function setFrameHeight(){
-        var frameContent = $(this).contents();
-          var frameBody = frameContent.find("body")
-          frameBody.css({"margin": "0px", "width": "100%","max-width": "100%","padding": "0px"})
-          $(this).height((frameBody.get(0).scrollHeight) + 'px');
-          
-      }
+      $('#iframe').on("load", function() { setFrameHeight($(this)); }); 
 
-      $('#iframe').on("load", function() { setFrameHeight(); }); 
-
-      $(window).on("resize orientationchange",function(){ setFrameHeight(); })
-
+      $(window).on("resize orientationchange",function(){ setFrameHeight($(this)); })
     })
   </script>
   

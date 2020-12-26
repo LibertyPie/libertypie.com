@@ -5,3 +5,4 @@ workers-site/package-lock.json
 workers-site/package.json
 wrangler.toml
 workers-site/
+crowdin.yml

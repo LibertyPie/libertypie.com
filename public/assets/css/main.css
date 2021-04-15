@@ -191,6 +191,21 @@
 section.no-pad {
   padding: 0;
 }
+
+.as_seen_section {
+  margin-top: 40px;
+  /* border-top: 1px solid #889cff;
+  padding-top: 40px; */
+}
+
+.as_seen_section img {
+  vertical-align: middle;
+  max-width: 100%;
+  width: 200px;
+  max-height: 40px;
+  filter: grayscale(80%);
+}
+
 @media (max-width: 576px) {
   .team .info .name {
     font-size: 1.1rem;
@@ -214,18 +229,14 @@ section.no-pad {
   }
 }
 
-.as_seen_section img  {
-  width: 220px;
-}
-
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .as_seen_section img {
-    width: 180px;
+    width: 100px;
   }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   .as_seen_section img {
-    width: 120px;
+    width: 80px;
   }
 }

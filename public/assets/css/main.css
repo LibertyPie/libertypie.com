@@ -213,3 +213,19 @@ section.no-pad {
     width: 50px !important;
   }
 }
+
+.as_seen_section img  {
+  width: 220px;
+}
+
+@media (max-width: 992px) {
+  .as_seen_section img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 576px) { 
+  .as_seen_section img {
+    width: 120px;
+  }
+}

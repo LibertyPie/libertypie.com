@@ -203,7 +203,8 @@ section.no-pad {
   max-width: 100%;
   width: 200px;
   max-height: 40px;
-  filter: grayscale(80%);
+  /* filter: grayscale(80%);  */
+  opacity: 0.6;
 }
 
 @media (max-width: 576px) {

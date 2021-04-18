@@ -15,10 +15,10 @@
       <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
 
-      <title>LibertyPie - Secure Non-Custodial P2P Exchange & DeFi Protocol</title>
+      <title>LibertyPie - An Ecosystem of DeFi protocols such as a P2P exchange, a dex aggregator & a cross-chain asset bridge.</title>
 
       <meta name="keywords" content="LibertyPie, XPIE, P2P Exchange, Dex, Ethereum,  Blockchain, DeFi, Binance Smart Chain, Yield  Farm, non-custodial, permissionless, autonomous" />
-      <meta name="description" content="LibertyPie is the first Non-Custodial, Permissionless &  autonomous P2P Exchange & DeFi protocol on Ethereum & Binance Smart Chain." />
+      <meta name="description" content="LibertyPie is an ecosystem of DeFi protocols consisting of a decentralized P2P exchange, a dex aggregator & a cross-chain asset bridge." />
 
       <link href="/assets/css/main.min.css" rel="stylesheet" />
 
@@ -32,6 +32,16 @@
         gtag('config', 'G-0D0LYN4ZRM');
       </script>
 
+      <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+      <script>
+        window.OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+          OneSignal.init({
+            appId: "db25d6bc-c384-4fa8-9fca-3b46f79368b7",
+          });
+        });
+      </script>
+      
     </head>
     <body>   
         <div class="page-wrapper">            
@@ -63,10 +73,10 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                         <li class="nav-item"> <a class="nav-link scrollable" href="#governance">Governance (XPIE)</a></li>
-                        <li class="nav-item"> <a class="nav-link scrollable" href="#audits" href="#">Audits</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="/coming-soon.html">Vote</a></li>
+                        <li class="nav-item"> <a class="nav-link scrollable" href="#ecosystem" href="#">Ecosystem</a></li>
                         <li class="nav-item"> <a class="nav-link scrollable" href="#partners" href="#">Partners</a></li>
-                        <li class="nav-item"> <a class="nav-link" target="_blanks" href="https://medium.com/@liberty-pie">Blog</a></li>
+                        <li class="nav-item"> <a class="nav-link scrollable" href="#press">Press</a></li>
+                        <li class="nav-item"> <a class="nav-link scrollable" href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     </nav>  
@@ -92,20 +102,26 @@
         </div>
         <div class="col-12 col-lg-6 col-xl-6">
           <!-- Heading -->
-          <h1 class="display-4 text-white">
-               A True P2P Protocol to Protect <span class="font-weight-bold">You</span>            
+          <h1 class="display-5 text-white">
+               A True P2P & DeFi Protocols to Enhance Your <span class="font-weight-bold">Trade</span>            
               </h1>
           <!-- Text -->
-          <p class="lead text-light">LibertyPie is a non-custodial, permissionless & autonomous P2P exchange & DeFi protocol with fraud protection mechanism.</p>
-            <a href="/whitepaper.html" class="btn btn-outline-light mr-1">Whitepaper</a>
-            <a href="/coming-soon.html" class="btn text-white"> 
-                Launch App
-                <i class="la la-arrow-right ml-1 align-middle line-h-0" style="font-size: 24px;"></i> 
+          <p class="lead text-light">
+            LibertyPie is an ecosystem of DeFi protocols consisting of a decentralized P2P exchange, a dex aggregator & a cross-chain asset bridge.
+          </p>
+            <a href="/assets/data/libertypie_litepaper.pdf" target="_blank" class="btn btn-outline-light mr-1">Lite Paper (Simple)</a>
+            <a href="/whitepaper.html" target="_blank" class="btn text-white"> 
+                White Paper (Technical)
             </a>
         </div>
 
-        <div class="col-12 as_seen_section mt-10">
-        
+        <div id="press" class="mt-5"></div>
+        <div class="col-12 as_seen_section mt-5">
+          
+          <h2 class="mb-5 text-center" style="font-size:24px; font-weight:bold; color:rgba(255,255,255,0.6)">
+            AS SEEN ON
+          </h2>
+
           <div class="d-flex flex-row justify-content-between flex-wrap">
               <a href="https://finance.yahoo.com/news/libertypie-unveils-decentralized-p2p-trading-124000538.html" class="px-2" target="_blank">
                 <img src="/assets//img/yahoo_finance.svg" height="48" alt="Yahoo Finance" />
@@ -117,6 +133,10 @@
 
               <a href="https://cryptopotato.com/libertypie-partners-with-zoracles-to-expand-private-decentralized-defi-platform/" class="px-2 cryptopotato" target="_blank">
                 <img src="/assets//img/cplogo3.png"  alt="CryptoPotato" />
+              </a>
+              
+              <a href="https://medium.com/@liberty-pie" class="px-2 medium" target="_blank">
+                <img src="/assets//img/medium.svg"  alt="Medium" />
               </a>
               
           </div>
@@ -284,10 +304,10 @@
                                     <div class="mr-3">
                                       <img class="img-fluid" src="/assets/img/vault.svg" width="64" alt="">
                                     </div>
-                                    <h5 class="m-0 text-light">Vault</h5>
+                                    <h5 class="m-0 text-light">Staking</h5>
                                   </div>
                                   <p class="mb-0">
-                                     Earn XPIE token by staking your favourite  supported assets 
+                                     Earn more XPIE token by staking in pools
                                   </p>
                                 </div>
                             </div>
@@ -297,24 +317,68 @@
               </section>
             <!--end Governance-->
 
-            <!-- Audits-->
-            <div class="row align-items-center justify-content-between" id="audits">
+            <!-- Ecosystem-->
+            <div class="row align-items-center justify-content-between" id="ecosystem">
                 <div class="col-12 col-lg-6 mb-6 mb-lg-0">
-                  <img src="/assets/img/audit.png" alt="Audits" class="img-fluid">
+                  <img src="/assets/img/audit.png" alt="Ecosystem" class="img-fluid">
                 </div>
                 <div class="col-12 col-lg-6 col-xl-5">
                     <div class="mb-5"> 
                         <span class="badge badge-light-soft p-2">
                             <i class="la la-tasks ic-3x rotation"></i>
                         </span>
-                        <h2 class="mt-3 text-white">Security Audits</h2>
+                        <h2 class="mt-3 text-white">LibertyPie Ecosystem</h2>
                         <p class="lead">
-                            In-depth contract code inspection & checks by industry experts  to protect  your assets
+                          The LibertyPie ecosystem consist of a decentralized P2P platform, a Dex aggregator & and cross-chain asset bridge
                         </p>
-                        <h1 class="text-white">Coming  Soon</h1>
+                        
                     </div>
-                  
-    
+                </div>
+                <div class="col-12">
+                    <div class="row pt-10">
+                      <div class="col-12 col-lg-4 col-xl-4 col-md-6 pb-5">
+                          <div  class="bg-primary-soft rounded p-5">
+                            <div class="d-flex align-items-center mb-4">
+                              <div class="mr-3">
+                                <img class="img-fluid" src="/assets/img/exchange_2.svg" width="32" alt="">
+                              </div>
+                              <h5 class="m-0 text-light">P2P Exchange</h5>
+                            </div>
+                            <p class="mb-0">
+                                Decentralized, non-custodial, permissionless & autonomous P2P exchange protocol
+                            </p>
+                          </div>
+                      </div>
+
+                      <div class="col-12 col-lg-4 col-xl-4 col-md-6 pb-5">
+                        <div  class="bg-primary-soft rounded p-5">
+                          <div class="d-flex align-items-center mb-4">
+                            <div class="mr-3">
+                              <img class="img-fluid" src="/assets/img/aggregate.svg" width="32" alt="">
+                            </div>
+                            <h5 class="m-0 text-light">Dex Aggregator</h5>
+                          </div>
+                          <p class="mb-0">
+                            Get the best swap rate for assets from various decentralized exchanges & platforms in a snap
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-4 col-xl-4 col-md-6 pb-5">
+                        <div  class="bg-primary-soft rounded p-5">
+                          <div class="d-flex align-items-center mb-4">
+                            <div class="mr-3">
+                              <img class="img-fluid" src="/assets/img/portal.svg" width="32" alt="">
+                            </div>
+                            <h5 class="m-0 text-light">Cross-Chain Bridge</h5>
+                          </div>
+                          <p class="mb-0">
+                            A decentralized way to move liquidity to & fro various supported blockchains at anytime
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
                 </div>
             </div>
             <!-- End Audits -->
@@ -363,12 +427,90 @@
       </section>
       <!--end News -->
 
+      <!-- Social Media-->
+      <section 
+        id="contact"
+        class="custom-py-2 position-relative bg-dark parallaxie" 
+        style="background-image: url('/assets/img/social_bg_4.jpg');background-size: cover; background-repeat: no-repeat; background-attachment: fixed;" data-overlay="6"
+      >
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            
+            <div class="col-12 col-lg-4 col-xl-5 mb-11 mb-lg-0 text-center">
+              <!--
+              <div class="video-btn"> <a class="play-btn popup-youtube" href="https://www.youtube.com/watch?v=P_wKDMcr1Tg"><i class="la la-play"></i></a>
+                <div class="spinner-eff">
+                  <div class="spinner-circle circle-1"></div>
+                  <div class="spinner-circle circle-2"></div>
+                </div>
+              </div>
+              -->
+            </div>
+
+            
+            <div class="col-12 col-lg-7 col-xl-6">
+              <div class="row text-center">
+                <div class="col-lg-6 col-md-6">
+                  <div class="bg-primary rounded p-5 shadow">
+                    <div class="text-white">
+                      <h3 class="text-white">Twitter</h3>
+                      <!--<span class="count-number display-4" data-to="234" data-speed="10000">234</span>-->
+                      <a class="text-white-8" href="https://twitter.com/liberty_pie" target="_blank">Follow @liberty_pie</a> 
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mt-5">
+                  <div class="counter bg-white rounded p-5 shadow">
+                    <div class="counter-desc">
+                      <h3>Telegram</h3>
+                      <!--<span class="count-number display-4 text-primary" data-to="455" data-speed="10000">455</span> -->
+                      <a href="https://t.me/libertypie" class="text-primary" target="_blank">Join @libertypie</a> 
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mt-5 mt-md-0">
+                  <div class="counter bg-white rounded p-5 shadow">
+                    <div class="counter-desc">
+                      <h3>Medium</h3>
+                      <!--<span class="count-number display-4 text-primary" data-to="365" data-speed="10000">365</span>-->
+                      <a href="https://medium.com/@liberty_pie" class="text-primary" target="_blank">Follow @liberty_pie</a> 
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mt-5">
+                  <div class="counter bg-orange rounded p-5 shadow">
+                    <div class="counter-desc text-white">
+                      <h3>Github</h3>
+                      <!--<span class="count-number display-4 text-primary" data-to="365" data-speed="10000">365</span>-->
+                      <a href="https://github.com/libertypie" class="text-white-8" target="_blank">Fork @libertypie</a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- / .row -->
+        </div>
+        <div class="shape-1" style="height: 200px; overflow: hidden;">
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C150.00,150.00 271.49,-50.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #fff;"></path>
+          </svg>
+        </div>
+        <div class="shape-1 bottom" style="height: 200px; overflow: hidden;">
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+          </svg>
+        </div>
+      </section>
+      <!--end social media -->  
+
+
        <!--comparison-->
       <section  class="pt-0" id="libertypie-vs-others">
         <div class="mt-5 justify-content-center text-center">
           <div class="mb-10">
-            <h2 class="mt-3 font-w-6">LibertyPie vs Others</h2>
-            <p class="lead mb-0">Below is a comprehensive comparison between LibertyPie & other P2P platforms</p>
+            <h2 class="mt-3 font-w-6">LibertyPie P2P vs Others</h2>
+            <p class="lead mb-0">Below is a comprehensive comparison between LibertyPie P2P & other P2P platforms</p>
           </div>
           <div>
             <div class="table-responsive-md">
@@ -474,49 +616,160 @@
       <!--end comparison-->  
         <!--end comparison-->  
       <!--start partners and integration-->
-      <section>
+      <section id="partners">
         <div class="container">
           <div class="mt-5 justify-content-center text-center">
             <div class="mb-10">
-              <h2 class="mt-3 font-w-6">Partners</h2>
-              <p class="lead mb-0">Technology & Integration partners</p>
+              <h2 class="mt-3 font-w-6">Partners & Sponsors</h2>
+              <p class="lead mb-0">Our awesome  partners & sponsors who made this project possible</p>
             </div>
           </div>
           <div class="row justify-content-center partners">
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
               <div class="partner">
                 <a href="https://chain.link/" target="_blank">
-                  <img src="/assets/img/brands/chainlink.png" alt="">
+                  <img src="/assets/img/brands/chainlink.png" alt="ChainLink">
                 </a>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
               <div class="partner">
-                <a href="https://zoracles.com/" target="_blank">
-                  <img src="/assets/img/brands/zoracles.png" alt="">
+                <a href="https://liberty-pie.medium.com/libertypie-partners-with-zoracles-to-expand-private-decentralized-defi-platform-26fbbbf1ad14" target="_blank">
+                  <img src="/assets/img/brands/zoracles.png" alt="Zoracle">
                 </a>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
               <div class="partner">
                 <a href="https://sia.tech/" target="_blank">
-                  <img src="/assets/img/brands/sia.png" alt="">
+                  <img src="/assets/img/brands/sia.png" alt="Sia Project">
                 </a>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
               <div class="partner">
                 <a href="https://renproject.io/" target="_blank">
-                  <img src="./assets/img/brands/ren.svg" alt="">
+                  <img src="/assets/img/brands/ren.svg" alt="Ren Project">
                 </a>
               </div>
             </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+              <div class="partner">
+                <a href="https://liberty-pie.medium.com/cloudflare-sponsors-libertypie-with-infrastructural-license-upgrade-8bc284b3efd2" target="_blank">
+                  <img src="/assets/img/cf-logo-h.svg" alt="Cloudflare">
+                </a>
+              </div>
+            </div>
+            
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+              <div class="partner">
+                <a href="https://liberty-pie.medium.com/browserstack-joins-as-libertypie-sponsor-c7423d24af9e" target="_blank">
+                  <img src="/assets/img/browserstack.svg"  alt="Browser Stack">
+                </a>
+              </div>
+            </div>
+
+
           </div>
           
           </div>
         </div>
       </section>
       <!--end partners and integration-->
+
+      <!--Team Section-->
+      <section class="position-relative">
+        <div class="shape-2 transform-md-rotate" style="overflow: hidden;">
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M208.09,0.00 C152.70,67.10 262.02,75.98 200.80,150.00 L0.00,150.00 L0.00,0.00 Z" style="stroke: none; fill: #1360ef;"></path>
+          </svg>
+        </div>
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-12 col-lg-4 mb-6 mb-lg-0">
+              <div> <span class="badge badge-light-soft p-2">
+                        <i class="la la-users ic-3x rotation"></i>
+                    </span>
+                <h2 class="mt-4 text-white">Team & Contributors</h2>
+                <p class="lead mb-0 text-white">
+                  LibertyPie is not an organization, but a set of codes which governs the protocol. Its adopts the DAO structure of governance.
+                  Decisions are made by smart contract via community voting.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-8">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                  <div class="card p-4 shadow border-0 flex-sm-row">
+                    <div class=" mr-sm-5 mb-3 mb-sm-0">
+                      <img alt="Ashutosh Singh" src="/assets/img/team/ashu.jpeg" width="100" class="shadow-primary img-fluid rounded-circle d-inline">
+                    </div>
+                    <div class="card-body p-0 pt-4">
+                      <div>
+                        <h5 class="text-primary d-inline">Ashutosh Singh</h5>
+                        <small class="text-muted font-italic">- Head Of Operations, Asia</small>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" title="LinkedIn" target="_blank">
+                         <img src="/assets/img/linkedin_2.svg" width="32" height="32" alt="Linked In" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                  <div class="card p-4 shadow border-0 flex-sm-row">
+                    <div class="w-50 mr-sm-5 mb-3 mb-sm-0">
+                      <img alt="Image" src="assets/images/testimonial/02.jpg" class="shadow-primary img-fluid rounded-circle d-inline">
+                    </div>
+                    <div class="card-body p-0">
+                      <p>Bootsland Amazing Landing Page All-in-one, clean code, Crative &amp; Modern design.</p>
+                      <div>
+                        <h5 class="text-primary d-inline">Johny Stock</h5>
+                        <small class="text-muted font-italic">- Supervisor</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 mt-5 mt-md-0">
+                  <div class="card p-4 shadow border-0 flex-sm-row">
+                    <div class="w-50 mr-sm-5 mb-3 mb-sm-0">
+                      <img alt="Image" src="assets/images/testimonial/03.jpg" class="shadow-primary img-fluid rounded-circle d-inline">
+                    </div>
+                    <div class="card-body p-0">
+                      <p>Bootsland Amazing Landing Page All-in-one, clean code, Crative &amp; Modern design.</p>
+                      <div>
+                        <h5 class="text-primary d-inline">Leeny Biton</h5>
+                        <small class="text-muted font-italic">- Manager</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 mt-5">
+                  <div class="card p-4 shadow border-0 flex-sm-row">
+                    <div class="w-50 mr-sm-5 mb-3 mb-sm-0">
+                      <img alt="Image" src="assets/images/testimonial/01.jpg" class="shadow-primary img-fluid rounded-circle d-inline">
+                    </div>
+                    <div class="card-body p-0">
+                      <p>Bootsland Amazing Landing Page All-in-one, clean code, Crative &amp; Modern design.</p>
+                      <div>
+                        <h5 class="text-primary d-inline">Jensen Rom</h5>
+                        <small class="text-muted font-italic">- Ceo</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+            </div>
+          </div>
+          <!-- / .row -->
+        </div>
+      </section>
+      <!--End Team Section-->
+
       <!-- faq -->
       <section>
         <div class="container" id="faq">
@@ -536,24 +789,38 @@
                   <div class="card-header border mb-0 bg-transparent">
                     <a class="text-dark" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true">
                       <h6 class="mb-0">
-                        What is LibertyPie
+                        What is LibertyPie Ecosystem
                       </h6>
                     </a>
                   </div>
                   <div id="collapse1" class="collapse show" data-parent="#accordion">
                     <div class="card-body text-muted">
-                      LibertyPie is a non-custodial, permissionless & autonomous  contract-based  P2P & DeFi protocol on the Ethereum & Binance Smart Chain.
+                      LibertyPie is an ecosystem of DeFi protocols consisting of a decentralized P2P exchange, a dex aggregator & a cross-chain asset bridge.
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-0 active mb-2">
+                  <div class="card-header border mb-0 bg-transparent">
+                    <a class="text-dark" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true">
+                      <h6 class="mb-0">
+                        What is LibertyPie P2P Exchange
+                      </h6>
+                    </a>
+                  </div>
+                  <div id="collapse1" class="collapse show" data-parent="#accordion">
+                    <div class="card-body text-muted">
+                      LibertyPie P2P is a non-custodial, permissionless & autonomous  decentralized  P2P exchange protocol based on smart contracts.
                     </div>
                   </div>
                 </div>
                 <div class="card border-0 mb-2">
                   <div class="card-header border mb-0 bg-transparent">
                       <a class="text-dark" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                        <h6 class="mb-0">What  is XPIE</h6>
+                        <h6 class="mb-0">What is XPIE</h6>
                       </a>
                   </div>
                   <div id="collapse2" class="collapse" data-parent="#accordion">
-                    <div class="card-body text-muted"> XPIE is the governance token of LibertyPie project.</div>
+                    <div class="card-body text-muted"> XPIE is the deflationary governance token of LibertyPie project.</div>
                   </div>
                 </div>
                 <div class="card border-0">
@@ -616,6 +883,7 @@
                 </li>
                 <li class="mb-3 nav-item"><a class="nav-link"  target="_blank" href="mailto:hello@libertypie.com">Contact Us</a>
                 </li>
+                <li class="mb-3 nav-item"><a class="nav-link" href="/assets/data/libertypie_litepaper.pdf" target="_blank">Lite Paper</a></li>
                 <li class="mb-3 nav-item"><a class="nav-link" href="/whitepaper.html"   target="_blank">White Paper</a></li>
               </ul>
        
@@ -623,11 +891,10 @@
             <div class="col-12 col-sm-4 mt-6 mt-sm-0 navbar-dark">
               <h5 class="mb-4 text-white">Sections</h5>
               <ul class="navbar-nav list-unstyled mb-0">
-                <li class="mb-3 nav-item"><a class="nav-link scrollable" href="#libertypie-vs-others">LibertyPie vs Others</a>
-                </li>
-                <li class="mb-3 nav-item"><a class="nav-link scrollable" href="#tech">Technologies</a>
-                </li>
-
+                <li class="mb-3 nav-item"><a class="nav-link scrollable" href="#libertypie-vs-others">LibertyPie vs Others</a></li>
+                <li class="mb-3 nav-item"><a class="nav-link scrollable" href="#tech">Technologies</a></li>
+                <li class="mb-3 nav-item"><a class="nav-link scrollable" href="#partners">Partners & Sponsors</a></li>
+                <li class="mb-3 nav-item"><a class="nav-link scrollable" href="#ecosystem">Ecosystem</a></li>
               </ul>
             </div>
 

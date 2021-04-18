@@ -219,6 +219,11 @@ section.no-pad {
   margin-top: 100px !important;
 }
 
+.as_seen_section a {
+  padding-top:15px;
+  padding-bottom: 15px;
+}
+
 .as_seen_section img  {
   width: 180px;
 }
@@ -229,8 +234,8 @@ section.no-pad {
   }
 }
 
-@media (max-width: 576px) { 
-  .as_seen_section img {
-    width: 120px;
-  }
-}
+
+.text-white-8 { color: #fff; color: rgba(255, 255, 255, 0.8) !important; }
+.text-dark-6 { color: #000; color: rgba(0, 0, 0, 0.6) !important; }
+
+.color-linkedin{ color: #4C6EF5; }

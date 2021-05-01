@@ -1,7 +1,7 @@
 // @koala-prepend "jquery-3.5.1.min.js"
 // @koala-prepend "bootstrap.min.js"
 // @koala-prepend "simpleParallax.min.js"
-// @koala-prepend "parallaxie.js"
+// @koala-prepend "parallaxie.js" 
 // @koala-prepend "theme-script.js"
 // @koala-prepend "../libs/slick/slick.min.js"
 // @koala-prepend "theme-script.js"
@@ -148,3 +148,35 @@ async function processMediumRssFeed(data){
    $("#blog_posts_sections").css("display","block");
 
 } //end 
+
+
+/**
+ * initVideoPlayer
+ */
+function initVideoPlayer(){
+
+    var videoSrc;  
+
+    $('.play_video_btn').on("click",function(e) {
+        e.preventDefault();
+         videoSrc = $(this).attr("href");
+         console.log(videoSrc)
+        $('#videoPlayerModal').modal('show');
+    });
+    
+    // when the modal is opened autoplay it  
+    $('#videoPlayerModal').on('shown.bs.modal', function (e) {
+        $("#video").attr('src',videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    })
+    
+    $('#videoPlayerModal').on('hide.bs.modal', function (e) {
+        $("#video").attr('src',''); 
+    }) 
+
+}
+
+
+
+$(function(){
+    initVideoPlayer();
+})
